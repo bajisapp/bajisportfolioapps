@@ -1,8 +1,9 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import {Link} from 'react-scroll'
-
 import loginscreen from '../assets/LoginScreen.jpeg'
+import loginscreen2 from '../assets/LoginScreen2.jpg'
+
 
 const Home = () => {
   return (
@@ -33,17 +34,21 @@ const Home = () => {
   </div>
   <div className="col-span-3 sm:col-span-1">
   <div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <img src={loginscreen} alt="Login Screen" style={{ height: '500px' }} />
+    <img src={loginscreen} alt="Login Screen" style={{ height: '500px',    borderRadius:'10px' }} />
   </div>
 </div>
-<div className="col-span-3 sm:col-span-1">
+<div className="col-span-3 sm:col-span-1" >
 <div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <img src={loginscreen} alt="Login Screen" style={{ height: '500px' }} />
+    <img src={loginscreen2} alt="Login Screen" style={{ height: '500px' ,   borderRadius:'10px'}} />
+    
   </div>
+
+  <a className='flex justify-between items-center w-full text-gray-300' target="_blank" href='https://resaleapp.onrender.com/'> Go to ResaleAPP </a>
+
 </div>
-<div className="col-span-3 sm:col-span-1">
+<div className="col-span-3 sm:col-span-1" style={{textalign: 'center'}}>
 <div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <img src={loginscreen} alt="Login Screen" style={{ height: '500px' }} />
+    <img src={loginscreen} alt="Login Screen" style={{ height: '500px',   borderRadius:'10px' }} />
   </div>
 </div>
 </div>

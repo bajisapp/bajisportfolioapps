@@ -6,6 +6,8 @@ import bootstrap from '../assets/bootstrap.png'
 import photoshops from '../assets/Photoshop.png'
 import aspnet from '../assets/asp.png'
 import sql from '../assets/SQL SERVER.png'
+import mongodb from '../assets/mongo.png'
+import react from '../assets/react.png'
 
 
 function Skills() {
@@ -19,32 +21,41 @@ function Skills() {
         </div>
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-            
-            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
-                <img className='w-20 mx-auto' src={CSS} alt='CSS Icon' />
-                <p>Tailwind CSS</p>
-            </div>
-            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
-                <img className='w-20 mx-auto' src={firebase} alt='CSS Icon' />
-                <p>Firebase</p>
+        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
+                <img className='w-20 mx-auto' src={photoshops} alt='CSS Icon' />
+                <p className='py-3'>Photoshop</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
                 <img className='w-20 mx-auto' src={bootstrap} alt='CSS Icon' />
-                <p>Bootstrap</p>
+                <p className='py-3'>Bootstrap</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
-                <img className='w-20 mx-auto' src={photoshops} alt='CSS Icon' />
-                <p>Photoshop</p>
+                <img className='w-20 mx-auto' src={react} alt='CSS Icon' />
+                <p className='py-3'>React</p>
             </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
+                <img className='w-20 mx-auto' src={mongodb} alt='CSS Icon' />
+                <p className='py-3'>MongoDB</p>
+            </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
+                <img className='w-20 mx-auto' src={CSS} alt='CSS Icon' />
+                <p className='py-3'>Tailwind CSS</p>
+            </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
+                <img className='w-20 mx-auto' src={firebase} alt='CSS Icon' />
+                <p className='py-3'>Firebase</p>
+            </div>
+      
+        
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
                 <img className='w-20 mx-auto' src={aspnet} alt='CSS Icon' />
-                <p>ASP.net</p>
+                <p className='py-3'>ASP.net</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
                 <img className='w-20 mx-auto' src={sql} alt='CSS Icon' />
-                <p>SQL Server</p>
+                <p className='py-3'>SQL Server</p>
             </div>
-
+      
         </div>
 
     </div>      

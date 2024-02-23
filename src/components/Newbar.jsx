@@ -9,9 +9,9 @@ function Newbar() {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
+        <Link to="home" smooth={true} duration={500}>
         <img src={Logo} alt='Logo Image' style={{height:'50px'}} />
-      </div>
+        </Link>
       
         <ul className='hidden md:flex'>
             <li>
@@ -64,10 +64,10 @@ function Newbar() {
         <div className='flex fixed flex-col top-[35%] left-0'>
         <ul>
             <li className='w-[140px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0077b5]'>
-                <a className='flex justify-between items-center w-full text-gray-300' href='/'>Linkedin <FaLinkedin className='h-[60px]' /> </a>
+                <a className='flex justify-between items-center w-full text-gray-300' target="_blank" href='https://www.linkedin.com/in/balaji-kaliyaperumal-92164511b/'>Linkedin <FaLinkedin className='h-[60px]' /> </a>
             </li>
             <li className='w-[140px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#000000]'>
-                <a className='flex justify-between items-center w-full text-gray-300' href='/'>GitHub <FaGithub className='h-[60px]' /> </a>
+                <a className='flex justify-between items-center w-full text-gray-300' target="_blank" href='https://github.com/bajisapp'>GitHub <FaGithub className='h-[60px]' /> </a>
             </li>
         </ul>
         </div>

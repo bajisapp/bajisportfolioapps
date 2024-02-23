@@ -1,30 +1,54 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import {Link} from 'react-scroll'
+
+import loginscreen from '../assets/LoginScreen.jpeg'
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen bg-[#020e1f]'>
+    <div name='home' className='w-full  bg-[#020e1f]'>
         {/* container */}
-        <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[1000px] w-full px-4 grid sm:grid-cols-2 gap-8'>
-            <div>
+
+      
+
+
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-4" style={{paddingTop:'10%', paddingBottom:'10%'}}> 
+  <div className="col-span-3 sm:col-span-1">
+    <div class="h-full p-4">
+      <div>
         <p class="text-blue-600">Hi, my name is</p>
         <h1 class="text-2xl sm:text-2xl font-bold text-[#ccd6f6] animate-typing">Balaji K</h1>
         <h2 class="text-2xl sm:text-3xl font-bold text-[#515974] animate-typing">I'm a web designer</h2>
-        <p class="text-[#8892b0] py-4 max-w-[500px] animate-typing">I have a background in Web and Graphics designing and experience of successfully designing a websites layout, usability and appearance. Over the last few years, I’ve had the opportunity of working for several companies, this has given me extensive Front-end web development / Graphics Design knowledge and technical skills.</p>
+        <p class="text-[#8892b0] py-4 max-w-[500px] animate-typing">I have a background in Web and Graphics designing and experience of successfully designing a website's layout, usability, and appearance. Over the last few years, I’ve had the opportunity to work for several companies; this has given me extensive Front-end web development / Graphics Design knowledge and technical skills.</p>
         <div>
-        <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-blue-700 hover:border-blue-800'>View Works 
-        <span className='group-hover:rotate-90 duration-300'>
-        <HiArrowNarrowRight className='ml-4' /> 
-        </span>
-        </button>
+          <Link to="works" smooth={true} duration={500} className='text-white border-2 hover:bg-blue-600 hover:border-blue-300 px-4 py-4 my-8 mx-auto flex items-center'>
+            Works
+            <span className='group-hover:rotate-90 duration-300'>
+              <HiArrowNarrowRight className='ml-4' />
+            </span>
+          </Link>
         </div>
-        </div>
-        <div>
-            <p>test</p>
-        </div>
-        </div>    
-        </div>  
+      </div>
+    </div>
+  </div>
+  <div className="col-span-3 sm:col-span-1">
+  <div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={loginscreen} alt="Login Screen" style={{ height: '500px' }} />
+  </div>
+</div>
+<div className="col-span-3 sm:col-span-1">
+<div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={loginscreen} alt="Login Screen" style={{ height: '500px' }} />
+  </div>
+</div>
+<div className="col-span-3 sm:col-span-1">
+<div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={loginscreen} alt="Login Screen" style={{ height: '500px' }} />
+  </div>
+</div>
+</div>
+    
+
     </div>
   )
 }

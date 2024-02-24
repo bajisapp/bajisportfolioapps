@@ -42,7 +42,7 @@ const Home = () => {
     
   </div>
 
-  <a className='flex justify-between items-center w-full text-gray-300' target="_blank" href='https://resaleapp.onrender.com/'> Go to ResaleAPP. </a>
+  <a className='flex justify-between items-center w-full text-gray-300' target="_blank" href='https://resaleapp.onrender.com/'> Go to ResaleAPP . </a>
 
 </div>
 <div className="col-span-3 sm:col-span-1" style={{textalign: 'center'}}>

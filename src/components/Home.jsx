@@ -3,6 +3,7 @@ import {HiArrowNarrowRight} from 'react-icons/hi'
 import {Link} from 'react-scroll'
 import loginscreen from '../assets/LoginScreen.jpeg'
 import loginscreen2 from '../assets/LoginScreen2.jpg'
+import ReactNativeDesign01 from '../assets/projects/Mobile/React-Native-01.gif'
 
 
 const Home = () => {
@@ -12,7 +13,10 @@ const Home = () => {
     
 
 
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-4" style={{paddingTop:'10%', paddingBottom:'10%'}}> 
+<div className="container mx-auto grid grid-cols-1 sm:grid-cols-4" style={{paddingTop:'10%', paddingBottom:'10%'}}> 
+
+
+<div class="col-span-1 sm:col-span-1"></div>
   <div className="col-span-3 sm:col-span-1">
     <div className="h-full p-4">
       <div>
@@ -31,11 +35,24 @@ const Home = () => {
       </div>
     </div>
   </div>
+
+
+  <div className="col-span-3 sm:col-span-1" style={{textalign: 'center'}}>
+<div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={ReactNativeDesign01} alt="Login Screen" style={{ height: '500px',   borderRadius:'10px' }} />
+  </div>
+</div>
+
+
+       {/* container
   <div className="col-span-3 sm:col-span-1">
   <div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <img src={loginscreen} alt="Login Screen" style={{ height: '500px',    borderRadius:'10px' }} />
   </div>
 </div>
+ */}
+
+   {/* container
 <div className="col-span-3 sm:col-span-1" >
 <div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <img src={loginscreen2} alt="Login Screen" style={{ height: '500px' ,   borderRadius:'10px'}} />
@@ -44,12 +61,8 @@ const Home = () => {
 
   <a className='flex justify-between items-center w-full text-gray-300' target="_blank" href='https://resaleapp.onrender.com/'> Go to ResaleAPP . </a>
 
-</div>
-<div className="col-span-3 sm:col-span-1" style={{textalign: 'center'}}>
-<div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <img src={loginscreen} alt="Login Screen" style={{ height: '500px',   borderRadius:'10px' }} />
-  </div>
-</div>
+</div> */}
+
 </div>
     
 

@@ -37,7 +37,7 @@ const Home = () => {
   </div>
 
 
-  <div className="col-span-3 sm:col-span-1" style={{textalign: 'center'}}>
+  <div className="col-span-3 sm:col-span-1" style={{textalign: 'center'}}>    
 <div style={{ height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <img src={ReactNativeDesign01} alt="Login Screen" style={{ height: '500px',   borderRadius:'10px' }} />
   </div>
